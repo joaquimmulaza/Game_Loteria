@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loteria</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/all.js"></script>
+    <script src="js/jquery-3.6.0.js"></script>
+</head>
+<body>
+        <div id="header">
+            <i class="fab fa-bilibili bot"></i>
+            <h1 id="info">De 0 ha 2, adivinha o número que estou pensando!</h1>
+        </div>
+    <img id="logo" src="img/bingo.png" alt="logo">
+
+    <div class="imagem">
+        <img class="fundo" src="img/jogo.svg" alt="jogo">
+    </div>
+
+    <div class="tela">
+        <div class="splash">
+            <h1 class="fade-in"></h1>
+        </div>
+    </div>
+
+    <section id="dados">
+        <input type="number" name="numero" id="numero" placeholder="Digite o número aqui!">
+    </section>
+
+    <div id="btn">
+        <button id="botao">.</button>
+    </div>
+
+    <div class="alert hide" id="novo">
+        <span class="fas fa-exclamation-circle excla ico" id="icone"></span>
+        <span class="msg" id="alerta"></span>
+
+        <span class="close-btn">                                
+            <span class="fas fa-times time"></span>
+        </span>
+    </div>
+            
+    <audio src="audio/erro.mp3" id="audio" controls style="display: none;"></audio>
+
+    <audio src="audio/venceu.mp3" id="audio2" controls style="display: none;"></audio>
+
+    <audio src="audio/errado.mp3" id="audio3" controls style="display: none;"></audio>
+
+    <audio id="audio4" autoplay loop>
+        <source src="audio/fundo.mp3">
+    </audio> 
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
